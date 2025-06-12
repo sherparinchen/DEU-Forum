@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Threads - DEU Students Forum</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">
+                <img src="images/logo1.png" alt="DEU Logo" class="logo-img">
+                <span>DEU</span> Students Forum
+            </h1>            
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Languages</a>
+                <ul style="left: 0px">
+                    <li><a href="#">English</a></li>
+                    <li><a href="index-kr.html">Korean</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i> Rinchen Sherpa
+                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                </a>
+                <ul>
+                    <li><a href="admin/posts/index.html">Dashboard</a></li>
+                    <li><a href="login.html" class="logout">Logout</a></li>  
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <div class="page-wrapper">
+
+        <!-- Content -->
+        <div class="content clearfix">
+            <div class="main-content">
+                <h1 class="recent-post-title">All Student Threads</h1>
+
+                <!-- Example Threads (you can extend or load from server/database) -->
+                <div class="forum-thread">
+                    <div class="forum-thread-header">
+                        <strong>Where to get health insurance card?</strong>
+                        <span class="forum-meta">Posted by Tashi Doma • June 5, 2025</span>
+                    </div>
+                    <div class="forum-thread-body">
+                        I'm a first-year student and not sure where to apply for a student health insurance card. Help appreciated!
+                    </div>
+                    <div class="forum-thread-actions">
+                        <button class="vote-btn upvote"><i class="fas fa-thumbs-up"></i></button>
+                        <span class="vote-count">2</span>
+                        <button class="vote-btn downvote"><i class="fas fa-thumbs-down"></i></button>
+                        <button class="reply-btn">Reply</button>
+                    </div>
+                    <div class="forum-replies">
+                        <div class="reply">
+                            <strong>Norbu Wangmo</strong>: You can get it through NHIS after ARC registration.
+                        </div>
+                    </div>
+                    <div class="reply-form" style="display: none;">
+                        <textarea placeholder="Write your reply..." rows="2"></textarea>
+                        <button class="submit-reply">Submit</button>
+                    </div>
+                </div>
+
+                <div class="forum-thread">
+                    <div class="forum-thread-header">
+                        <strong>Can we freeze a semester?</strong>
+                        <span class="forum-meta">Posted by Sonam Gyatso • June 3, 2025</span>
+                    </div>
+                    <div class="forum-thread-body">
+                        Is it possible to freeze a semester due to family reasons? What documents are required?
+                    </div>
+                    <div class="forum-thread-actions">
+                        <button class="vote-btn upvote"><i class="fas fa-thumbs-up"></i></button>
+                        <span class="vote-count">6</span>
+                        <button class="vote-btn downvote"><i class="fas fa-thumbs-down"></i></button>
+                        <button class="reply-btn">Reply</button>
+                    </div>
+                    <div class="forum-replies">
+                        <div class="reply">
+                            <strong>Kelsang Tenzin</strong>: Yes, with approval from the department and a formal application.
+                        </div>
+                    </div>
+                    <div class="reply-form" style="display: none;">
+                        <textarea placeholder="Write your reply..." rows="2"></textarea>
+                        <button class="submit-reply">Submit</button>
+                    </div>
+                </div>
+
+                <!-- Create New Thread Form -->
+                <div class="create-thread-form">
+                    <h2>Create a New Thread</h2>
+                    <form action="threads.html" method="post">
+                        <input type="text" name="title" class="text-input" placeholder="Thread title..." required>
+                        <textarea name="content" class="text-input" rows="5" placeholder="Write your question or discussion here..." required></textarea>
+                        <button type="submit" class="btn btn-big">Post Thread</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="section search">
+                    <h2 class="section-title">Search</h2>
+                    <form action="threads.html" method="post">
+                        <input type="text" name="search-term" class="text-input" placeholder="Search threads...">
+                    </form>
+                </div>
+
+                <div class="section topics">
+                    <h2 class="section-title">Topics</h2>
+                    <ul>
+                        <li><a href="topics/noposts.html">Academics</a></li>
+                        <li><a href="topics/noposts.html">Job Hunt</a></li>
+                        <li><a href="topics/noposts.html">Visa & Legal</a></li>
+                        <li><a href="topics/noposts.html">Health & Living</a></li>
+                        <li><a href="topics/noposts.html">Suggestions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text"><span>DEU</span> Students Forum</h1>
+                <p>Connecting Dong-Eui University students through community, collaboration, and campus life.</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; 010-7395-9559</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; sherparinchen78@gmail.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <a href="events.html"><li>Events</li></a>
+                    <a href="team.html"><li>Team</li></a>
+                    <a href="mentors.html"><li>Mentors</li></a>
+                    <a href="gallery.html"><li>Gallery</li></a>
+                    <a href="t&c.html"><li>Terms and Conditions</li></a>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-form">
+                <h2>Contact Us</h2>
+                <form action="threads.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                    <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <i class="fas fa-envelope"></i> Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; deustudentsforum.com | Designed by Neon_2341
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Slick Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+</html>

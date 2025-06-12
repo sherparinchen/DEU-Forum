@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEU Students Forum</title>
+    <!--Font Awesome Styling-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!--Custom Styling-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">
+                <img src="images/logo1.png" alt="DEU Logo" class="logo-img">
+                <span>DEU</span> Students Forum
+            </h1>            
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Languages</a>
+            <ul style="left: 0px">
+                <li><a href="#">English</a></li>
+                <li><a href="index-kr.html">Korean</a></li>
+            </ul></li>
+            <!-- <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li> -->
+        </ul>
+        
+    </header>
+
+    <div class="auth-content">
+
+        <form action="register.html" method="post">
+            <h2 class="form-title">Register</h2>
+
+            <!--<div class="msg error">
+                <li>Username required</li>
+            </div> -->
+
+            <div>
+                <label>Username</label>
+                <input type="text" name="username" id="" class="text-input">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" id="" class="text-input">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password" id="" class="text-input">
+            </div>
+            <div>
+                <label>Password Confirmation</label>
+                <input type="password" name="passwordConf" id="" class="text-input">
+            </div>
+            <div>
+                <button type="submit" name="register-btn" class="btn btn-big"><a href="index.html">Register</a></button>
+            </div>
+            <p>Or <a href="login.html">Sign In</a></p>
+        </form>
+
+    </div>
+   
+
+    <!-- JQuery-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     
+    <!--Custom Script-->
+    <script src="js/script.js"></script>
+</body>
+</html>

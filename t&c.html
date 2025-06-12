@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | DEU Students Forum</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+  <style>
+      .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      aside {
+        flex: 1;
+        padding: 20px;
+        background-color: #e6eef7;
+        border-radius: 12px;
+        margin-right: 20px;
+        height: fit-content;
+        position: sticky;
+        top: 20px;
+      }
+
+      aside h3 {
+        margin-top: 0;
+        font-size: 1.2em;
+        border-bottom: 2px solid #0057b8;
+        padding-bottom: 5px;
+      }
+
+      aside ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      aside li {
+        margin-bottom: 12px;
+      }
+
+      aside a {
+        color: #0057b8;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      aside a:hover {
+        color: #003366;
+        text-decoration: underline;
+      }
+
+      main {
+        flex: 3;
+        background: white;
+        padding: 30px 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        font-family: "Lora", serif;
+      }
+
+      main h2 {
+        color: #003366;
+        margin-top: 40px;
+        font-size: 1.5em;
+        border-left: 4px solid #0057b8;
+        padding-left: 10px;
+      }
+
+      main p,
+      main li {
+        color: #333;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 900px) {
+        .container {
+          flex-direction: column;
+        }
+
+        aside {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2em;
+        }
+
+        main {
+          padding: 20px 15px;
+        }
+      }
+    </style>
+</head>
+<body>
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v22.0"></script>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1 class="logo-text">
+        <img src="images/logo1.png" alt="DEU Logo" class="logo-img">
+        <span>DEU</span> Students Forum
+      </h1>
+    </div>
+    <i class="fa fa-bars menu-toggle"></i>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#">Languages</a>
+        <ul style="left: 0px">
+          <li><a href="#">English</a></li>
+          <li><a href="index-kr.html">Korean</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-user"></i> Rinchen Sherpa <i class="fa fa-chevron-down" style="font-size: .8em;"></i></a>
+        <ul>
+          <li><a href="admin/posts/index.html">Dashboard</a></li>
+          <li><a href="login.html" class="logout">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <div class="container">
+      <aside>
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="#use">1. Use of Website</a></li>
+          <li><a href="#conduct">2. User Conduct</a></li>
+          <li><a href="#intellectual">3. Intellectual Property</a></li>
+          <li><a href="#liability">4. Limitation of Liability</a></li>
+          <li><a href="#changes">5. Changes to Terms</a></li>
+          <li><a href="#contact">6. Contact Us</a></li>
+        </ul>
+      </aside>
+
+      <main>
+        <p>
+          By accessing and using the DEU Students Forum website, you agree to
+          the following Terms and Conditions. Please read them carefully to
+          understand your rights and responsibilities.
+        </p>
+
+        <h2 id="use">1. Use of the Website</h2>
+        <p>
+          The website serves as an educational and social platform for DEU
+          students. You agree to use this website only for lawful purposes and
+          in a manner that does not infringe the rights of others.
+        </p>
+
+        <h2 id="conduct">2. User Conduct</h2>
+        <ul>
+          <li>No spamming, trolling, or harassment of users.</li>
+          <li>Respect intellectual discussion and differences of opinion.</li>
+          <li>Never attempt unauthorized access or manipulation of content.</li>
+        </ul>
+
+        <h2 id="intellectual">3. Intellectual Property</h2>
+        <p>
+          All content is owned by DEU Students Forum unless otherwise noted. You
+          may not copy, reuse, or distribute materials without prior permission.
+        </p>
+
+        <h2 id="liability">4. Limitation of Liability</h2>
+        <p>
+          We are not responsible for content submitted by users. Use this
+          platform at your own discretion. We do not guarantee the accuracy or
+          reliability of shared content.
+        </p>
+
+        <h2 id="changes">5. Changes to Terms</h2>
+        <p>
+          These terms may be updated without prior notice. Continued use of the
+          site means you accept those changes. We recommend reviewing this page
+          regularly.
+        </p>
+
+        <h2 id="contact">6. Contact Us</h2>
+        <p>
+          Questions or concerns? Please contact us through the forum's admin
+          panel or by email at deu.forum@edu.kr.
+        </p>
+      </main>
+    </div>
+
+  </div>
+  <!-- //Page Wrapper -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h1 class="logo-text"><span>DEU</span> Students Forum</h1>
+        <p>Connecting Dong-Eui University students through community, collaboration, and campus life.</p>
+        <div class="contact">
+          <span><i class="fas fa-phone"></i> &nbsp; 010-7395-9559</span>
+          <span><i class="fas fa-envelope"></i> &nbsp; sherparinchen78@gmail.com</span>
+        </div>
+        <div class="socials">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <br>
+        <ul>
+          <a href="events.html"><li>Events</li></a>
+          <a href="team.html"><li>Team</li></a>
+          <a href="mentors.html"><li>Mentors</li></a>
+          <a href="gallery.html"><li>Gallery</li></a>
+          <a href="t&c.html"><li>Terms and Conditions</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-section contact-form">
+        <h2>Contact Us</h2>
+        <br>
+        <form action="index.html" method="post">
+          <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+          <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+          <button type="submit" class="btn btn-big contact-btn">
+            <i class="fas fa-envelope"></i> Send
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; deustudentsforum.com | Designed by Neon_2341
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
